@@ -1,0 +1,205 @@
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import "./NavBar.css";
+
+const Navbar = () => {
+  const navigate = useNavigate();
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  return (
+    <div className="navbar">
+      <div className="logo">
+        <a href="#.">
+          <img
+            className="imglogo"
+            src="assets/images/nuk9logo.png"
+            alt="nuk9 Logo"
+          />
+        </a>
+      </div>
+
+      <nav>
+        <ul className="menu">
+          <li className="menu-item">
+            <a href="index.html">HOME</a>
+          </li>
+          <li
+            className={`menu-item dropdown ${showDropdown ? "show" : ""}`}
+            onMouseEnter={handleDropdownToggle}
+            onMouseLeave={handleDropdownToggle}
+          >
+            <a href="#.">SERVICES</a>
+            <ul className={`dropdown-menu ${showDropdown ? "show" : ""}`}>
+              <li>
+                <a href="index.html">System Audit </a>
+              </li>
+              <li>
+                <a href="index-2.html">Risk Assesment</a>
+              </li>
+              <li>
+                <a href="index-3.html">System Infiltration</a>
+              </li>
+              <li>
+                <a href="about.html">GRCs</a>
+              </li>
+              <li>
+                <a href="services.html">Security Coaching</a>
+              </li>
+              <li>
+                <a href="portfolio-1.html">portfolio 1</a>
+              </li>
+              <li>
+                <a href="portfolio-2.html">portfolio 2</a>
+              </li>
+              <li>
+                <a href="portfolio-detail.html">portfolio Detail</a>
+              </li>
+              <li>
+                <a href="blog.html">blog</a>
+              </li>
+              <li>
+                <a href="blog-single.html">blog Single</a>
+              </li>
+              <li>
+                <a href="contact.html">contact us</a>
+              </li>
+            </ul>
+          </li>
+          <li className="menu-item">
+            <a href="about.html">ABOUT US</a>
+          </li>
+          <li className="menu-item">
+            <a href="services.html">OUR TEAM</a>
+          </li>
+          <li className="menu-item">
+            <a href="portfolio-1.html">PORTFOLIO</a>
+          </li>
+          <li className="menu-item">
+            <a href="blog.html">OUR CLIENTEL</a>
+          </li>
+          <li className="menu-item">
+            <a href="contact.html">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;
+
+
+
+
+
+
+
+----------------------------------------------
+
+/* Common styles for all screen sizes */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  padding: 0 15px;
+  position: relative; /* Add relative positioning for dropdown positioning */
+}
+
+.menu-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* Dropdown Styles */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  min-width: 200px; /* Add a minimum width for better display on smaller screens */
+}
+
+/* Show the dropdown on hover for larger screens only */
+.menu-item:hover .dropdown-menu {
+  display: block;
+  /* background-color: black; */
+  color: white;
+  font-weight: bold;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+  /* background-color: black; */
+  font-weight: bolder;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active Item */
+
+.menu-item.active > a {
+  background-color: #555;
+}
+
+/* Responsive styles for screen size up to 768px */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .menu-item {
+    padding: 5px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    min-width: auto;
+    font-weight: bold;
+  }
+
+  .menu-item .dropdown-menu {
+    display: none;
+  }
+
+  .menu-item.active .dropdown-menu {
+    display: block;
+  }
+}
+

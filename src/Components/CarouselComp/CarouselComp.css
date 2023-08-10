@@ -1,0 +1,101 @@
+/* CarouselComp.css */
+.home-slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tp-banner-container {
+  width: 100%;
+}
+
+.slide-item {
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: auto;
+}
+
+.slide-caption {
+  position: absolute;
+  /* bottom: 20px;
+  left: 20px; */
+  top: 40%;
+  left: 30%;
+  color: #fff;
+}
+
+.slide-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slide-from-top {
+  animation: slideFromTop 2s ease-in-out;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-from-bottom {
+  animation: slideFromBottom 2s ease-in-out;
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* CarouselComp.css */
+/* Other styles... */
+
+.animate {
+  animation: slideFromTop 2s ease-in-out, slideFromBottom 2s ease-in-out;
+}
+
+/* Other styles... */
+
+.slide-subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.slide-description {
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: 5px;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .slide-title {
+    font-size: 18px;
+  }
+
+  .slide-subtitle {
+    font-size: 12px;
+  }
+
+  .slide-description {
+    font-size: 12px;
+  }
+}

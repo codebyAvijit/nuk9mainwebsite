@@ -1,0 +1,157 @@
+.responsive-carousel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.slick-slider {
+  border-radius: 4px;
+}
+
+.slick-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.slick-dots li button:before {
+  font-size: 8px;
+  color: #888;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #333;
+}
+
+.content-div {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+/* img {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(241, 230, 230);
+  border-radius: 100px;
+} */
+
+.company-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  margin-right: 10px;
+}
+
+.header img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.description p {
+  margin-bottom: 10px;
+}
+
+.description h4 {
+  margin-bottom: 15px;
+}
+
+.description li {
+  font-size: 15px;
+  color: gray;
+  list-style-type: disc; /* Sets the list item markers as dots */
+  margin: 5px 0 10px 20px; /* Adds space between ul and li elements */
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section {
+  flex: 1 1 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.section li {
+  font-size: 15px;
+  color: gray;
+  list-style-type: disc; /* Sets the list item markers as dots */
+  margin: 5px 0 5px 20px; /* Adds space between ul and li elements */
+}
+
+.section li li {
+  font-size: 15px;
+  color: gray;
+  list-style-type: none; /* Sets the list item markers as dots */
+  margin: 5px 0 5px 20px; /* Adds space between ul and li elements */
+}
+
+.section li li:before {
+  content: "-->";
+  display: inline;
+  width: 100px;
+  height: 108px;
+  padding: 10px;
+  /* border: 1px solid #000; */
+  /* border-radius: 50%; */
+  margin: 20px 0px 0 -9px;
+  /* Adjust position to align with the indentation */
+}
+
+/* Existing styles */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .responsive-carousel {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .slick-slider img {
+    max-width: 100%;
+  }
+
+  .content-div {
+    width: 100%;
+  }
+
+  .company-info {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header img {
+    max-width: 80px;
+    margin: 10px;
+  }
+
+  .sections {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section {
+    flex: 1 1 100%;
+  }
+}

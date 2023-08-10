@@ -1,0 +1,118 @@
+/* Common styles for all screen sizes */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #fff;
+  padding: 10px 0 0 0;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.logo .compname {
+  /* margin: 50px 0 0 5px; */
+  font-size: 15px;
+  font-weight: bolder;
+  color: black;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  padding: 0 15px;
+  position: relative; /* Add relative positioning for dropdown positioning */
+}
+
+.menu-item a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.menu-item a:hover {
+  color: red;
+}
+
+/* Dropdown Styles */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  min-width: 200px; /* Add a minimum width for better display on smaller screens */
+}
+
+/* Show the dropdown on hover for larger screens only */
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active Item */
+
+.menu-item.active > a {
+  background-color: #555;
+}
+
+/* Responsive styles for screen size up to 768px */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .menu-item {
+    padding: 5px 0;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    min-width: auto;
+    font-weight: bold;
+  }
+
+  .menu-item .dropdown-menu {
+    display: none;
+  }
+
+  .menu-item.active .dropdown-menu {
+    display: block;
+  }
+  .logo {
+    text-align: center;
+  }
+  .compname {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
