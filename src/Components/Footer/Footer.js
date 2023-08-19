@@ -5,7 +5,7 @@ const Footer = () => {
     <section className="footer-up">
       <div className="col-sm-6">
         <div className="work">
-          <i class="ion-map"></i>
+          <img src="assets/images/mapicon4.png" alt="map" />
           <p>
             E-702, Arjun, NL Complex
             <br />
