@@ -1615,7 +1615,7 @@ header.main-header nav .ownmenu li {
 .footer-up .work {
   padding: 50px;
   padding-top: 83px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   min-height: 200px;
   /* background: #3c3c3c; */
   background: #ff9f45;
@@ -1623,8 +1623,8 @@ header.main-header nav .ownmenu li {
 }
 .footer-up .contact {
   padding: 50px;
-  padding-top: 80px;
-  padding-bottom: 13px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   min-height: 200px;
   background: #343434;
 }
