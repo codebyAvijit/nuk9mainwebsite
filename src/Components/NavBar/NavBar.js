@@ -17,17 +17,24 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <Link to="/">
+        <Link className="logolink" to="/">
           <img
             className="imglogo"
-            src="assets/images/logo1.webp"
+            src="assets/images/nuk9max.jpg"
             alt="nuk9 Logo"
           />
           &nbsp;&nbsp;
           <span className="compname">
             NUK 9 Information Security Auditors LLP&nbsp;<sup>TM</sup>
+            <br></br>Governance | Risk | Compliance | Security | Coaching
+            <br></br>
+            Destination for all InfoSec Compliances
           </span>
         </Link>
+        {/* <p className="compname para">
+          Governance | Risk | Compliance | Security | Coaching<br></br>
+          Destination for all InfoSec Compliances
+        </p> */}
       </div>
 
       <nav>

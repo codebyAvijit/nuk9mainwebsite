@@ -27,15 +27,18 @@ const AboutUs = () => {
             <img
               className="img-responsive"
               // src="assets/images/about-img-1.jpg"
-              src="assets/images/nuk9logo.png"
+              src="assets/images/nuk9max.jpg"
               alt=""
             />
             <h6 className="margin-top-20 titleh4">Who we are</h6>
             <p>
               Information Systems plays an imperative role to make
               organizational success and create a brand image in minds of
-              customers NUK 9 Information Security Auditors LLP, commonly
-              referred as,&nbsp;
+              customers, we are your dedicated partners in navigating the
+              complex landscape of cybersecurity. With a relentless commitment
+              to securing your digital assets, we stand as a beacon of trust and
+              expertise in safeguarding your information. NUK 9 Information
+              Security Auditors LLP, commonly referred as,&nbsp;
               <b>“NUK 9 Auditors”</b>, leads into it.
             </p>
           </li>
@@ -43,14 +46,17 @@ const AboutUs = () => {
             <img
               className="img-responsive"
               // src="assets/images/about-img-2.jpg"
-              src="assets/images/nuk9logo.png"
+              src="assets/images/nuk9max.jpg"
               alt=""
             />
             <h6 className="margin-top-20 titleh4">our mission</h6>
             <p>
-              Information Systems plays an imperative role to make
-              organizational success and create a brand image in minds of
-              customers NUK 9 Information Security Auditors LLP, commonly
+              Our mission is to fortify the digital realm, one organization at a
+              time. Through rigorous assessment, proactive strategies, and
+              continuous vigilance, we ensure that our clients are equipped to
+              face an ever-evolving array of cyber risks. We are driven by the
+              mission to protect your data, your operations, and your
+              reputation. NUK 9 Information Security Auditors LLP, commonly
               referred as,&nbsp;
               <b>“NUK 9 Auditors”</b>, leads into it.
             </p>
@@ -59,15 +65,17 @@ const AboutUs = () => {
             <img
               className="img-responsive"
               // src="assets/images/about-img-3.jpg"
-              src="assets/images/nuk9logo.png"
+              src="assets/images/nuk9max.jpg"
               alt=""
             />
             <h6 className="margin-top-20 titleh4">our vision</h6>
             <p>
-              Information Systems plays an imperative role to make
-              organizational success and create a brand image in minds of
-              customers NUK 9 Information Security Auditors LLP, commonly
-              referred as,&nbsp;
+              Our vision is a digitally connected world where organizations
+              thrive without fear of cyber threats. We aspire to be the
+              cornerstone of this vision by providing uncompromising
+              cybersecurity solutions that empower businesses to innovate, grow,
+              and lead with confidence.NUK 9 Information Security Auditors LLP,
+              commonly referred as,&nbsp;
               <b>“NUK 9 Auditors”</b>, leads into it.
             </p>
           </li>

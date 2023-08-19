@@ -90,12 +90,14 @@ h5 {
 h6 {
   font-size: 16px;
   text-align: center;
+  font-weight: bold;
 }
 p {
   color: #989898;
   font-size: 13px;
   line-height: 28px;
   font-family: "montserratlight";
+  text-align: justify;
 }
 a {
   -webkit-transition: all 0.4s ease-in-out;
